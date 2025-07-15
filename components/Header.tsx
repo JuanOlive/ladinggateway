@@ -23,20 +23,20 @@ export const Header: React.FC<HeaderProps> = ({ whatsAppNumber, whatsAppMessage 
     ];
 
     return (
-        <header className="bg-white/80 backdrop-blur-sm sticky top-0 z-40 shadow-sm">
-            <div className="container mx-auto px-6 py-3 flex justify-between items-center">
+        <header className="bg-[#02050a]/95 backdrop-blur-sm sticky top-0 z-40 shadow-sm" >
+            <div className="container mx-auto px-6 py-3 flex justify-between items-center ">
                 <a href="#" className="flex items-center">
    
     <img 
-        src="/images/logo2.png" 
+        src="/images/logojuanify (2).png" 
         alt="Logo"
-        className="h-10 w-auto"  /* Altura fixa, largura automática */
+        className="h-12 w-auto"  /* Altura fixa, largura automática */
     />
 </a>
 
                 <nav className="hidden md:flex items-center space-x-8">
                     {navLinks.map((link) => (
-                        <a key={link.href} href={link.href} className="text-gray-600 hover:text-indigo-600 font-medium transition-colors">
+                        <a key={link.href} href={link.href} className="text-white hover:text-indigo-600 font-medium transition-colors">
                             {link.label}
                         </a>
                     ))}

@@ -25,11 +25,11 @@ const testimonials = [
 
 export const Testimonials: React.FC = () => {
     return (
-        <section id="testimonials" className="py-20 bg-white">
+        <section id="testimonials" className="py-20 bg-[#02050a]">
             <div className="container mx-auto px-6">
                 <AnimatedSection>
-                    <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-4">O que Meus Clientes Dizem</h2>
-                    <p className="text-center text-lg text-gray-600 max-w-2xl mx-auto mb-12">
+                    <h2 className="font-display text-white text-3xl md:text-4xl font-bold text-center mb-4">O que Meus Clientes Dizem</h2>
+                    <p className="text-center text-lg text-gray-400 max-w-2xl mx-auto mb-12">
                         A satisfação de quem confia no meu trabalho é minha maior recompensa.
                     </p>
                 </AnimatedSection>

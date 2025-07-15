@@ -6,7 +6,7 @@ import { AnimatedSection } from './AnimatedSection';
 const faqData = [
     {
         question: "Quanto tempo leva para criar um site?",
-        answer: "O tempo de desenvolvimento varia de acordo com a complexidade do projeto. Um site institucional simples pode levar de 2 a 4 semanas, enquanto um e-commerce completo pode levar de 6 a 8 semanas. Sempre estabelecemos um cronograma claro no início."
+        answer: "O tempo de desenvolvimento varia de acordo com a complexidade do projeto. Um site institucional simples pode levar de 2 semanas ou menos, enquanto um e-commerce completo pode levar de 6 a 8 semanas. Sempre estabelecemos um cronograma claro no início."
     },
     {
         question: "Meu site funcionará em celulares e tablets?",
@@ -21,8 +21,8 @@ const faqData = [
         answer: "Sim! Ofereço um período de suporte gratuito após o lançamento para corrigir eventuais problemas. Também ofereço planos de manutenção mensais para atualizações de segurança, backups e pequenas alterações."
     },
      {
-        question: "O site será otimizado para o Google (SEO)?",
-        answer: "Com certeza. A otimização para mecanismos de busca (SEO) é uma prioridade. Eu sigo as melhores práticas de SEO on-page, como URLs amigáveis, meta tags, otimização de imagens e código limpo para ajudar seu site a ranquear bem."
+        question: "Qual o valor dos sites?",
+        answer: "Depende muito das suas vontades! Um site comum apenas anunciando algo (como este), cobro em torno de 19,90R$. Sites com loja funcional ou com algum sistema de pagamento, já podemos discutir outro valor. Se você desejar domínio personalizado, você pagará a mais."
     }
 ];
 
@@ -60,16 +60,16 @@ export const FAQ: React.FC = () => {
     };
 
     return (
-        <section id="faq" className="py-20 bg-gray-100">
+        <section id="faq" className="py-20 bg-[#02050a]">
             <div className="container mx-auto px-6">
                 <AnimatedSection>
-                    <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-4">Dúvidas Frequentes</h2>
-                    <p className="text-center text-lg text-gray-600 max-w-2xl mx-auto mb-12">
+                    <h2 className="font-display text-3xl md:text-4xl text-white font-bold text-center mb-4">Dúvidas Frequentes</h2>
+                    <p className="text-center text-lg text-gray-400 max-w-2xl mx-auto mb-12">
                         Tire suas principais dúvidas sobre o processo de criação de sites.
                     </p>
                 </AnimatedSection>
                 <AnimatedSection>
-                    <div className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md">
+                    <div className="max-w-3xl mx-auto bg-gray-200 p-8 rounded-lg shadow-md">
                         {faqData.map((item, index) => (
                             <FAQItem
                                 key={index}

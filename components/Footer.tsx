@@ -28,7 +28,7 @@ export const Footer: React.FC<FooterProps> = ({ whatsAppNumber, whatsAppMessage 
             </div>
             <div className="bg-black py-4">
                 <div className="container mx-auto px-6 text-center text-gray-400">
-                    <p>&copy; {new Date().getFullYear()} JiekSites. Todos os direitos reservados.</p>
+                    <p>&copy; {new Date().getFullYear()} Juanify. Todos os direitos reservados.</p>
                 </div>
             </div>
         </footer>

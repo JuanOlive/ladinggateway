@@ -65,11 +65,11 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ item }) => (
 
 export const Portfolio: React.FC = () => {
     return (
-        <section id="portfolio" className="py-20 bg-gray-100">
+        <section id="portfolio" className="py-20 bg-[#02050a]">
             <div className="container mx-auto px-6">
                 <AnimatedSection>
-                    <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-4">Meus Trabalhos Recentes</h2>
-                    <p className="text-center text-lg text-gray-600 max-w-2xl mx-auto mb-12">
+                    <h2 className="font-display text-gray-100 text-3xl md:text-4xl font-bold text-center mb-4">Meus Trabalhos Recentes</h2>
+                    <p className="text-center text-lg text-gray-300 max-w-2xl mx-auto mb-12">
                         Confira alguns dos projetos que tive o prazer de criar para meus clientes.
                     </p>
                 </AnimatedSection>
