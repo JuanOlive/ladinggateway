@@ -2,6 +2,7 @@ import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 
 export default defineConfig(({ mode }) => {
+  
     const env = loadEnv(mode, '.', '');
     return {
       define: {
@@ -12,6 +13,14 @@ export default defineConfig(({ mode }) => {
         alias: {
           '@': path.resolve(__dirname, '.'),
         }
+      },
+        css: {
+    devSourcemap: true,
+    preprocessorOptions: {
+      scss: {
+        additionalData: `:root { color-scheme: only light; }`
       }
+    }
+  }
     };
 });

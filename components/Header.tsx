@@ -4,6 +4,7 @@ import { MenuIcon, XIcon } from './icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
+
 interface HeaderProps {
     whatsAppNumber: string;
     whatsAppMessage: string;
@@ -27,7 +28,7 @@ export const Header: React.FC<HeaderProps> = ({ whatsAppNumber, whatsAppMessage 
                 <a href="#" className="flex items-center">
    
     <img 
-        src="images/ChatGPT Image 14 de jul. de 2025, 11_37_16(1).png" 
+        src="/images/logo2.png" 
         alt="Logo"
         className="h-10 w-auto"  /* Altura fixa, largura automática */
     />

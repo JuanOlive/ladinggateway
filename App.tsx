@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Portfolio } from './components/Portfolio';
@@ -12,11 +12,17 @@ import { Footer } from './components/Footer';
 import { WhatsAppButton } from './components/WhatsAppButton';
 
 const App: React.FC = () => {
+    useEffect(() => {
+    // Remove qualquer classe dark do HTML
+    document.documentElement.classList.remove('dark');
+    // Força atributo light
+    document.documentElement.setAttribute('data-theme', 'light');
+  }, []);
     const WHATSAPP_NUMBER = "5511982930769"; // Use a real number with country code
     const WHATSAPP_MESSAGE = "Olá! Vi seu site e gostaria de um orçamento para um projeto.";
 
     return (
-        <div className="font-sans">
+        <div className="font-sans theme-light">
             <Header whatsAppNumber={WHATSAPP_NUMBER} whatsAppMessage={WHATSAPP_MESSAGE} />
             <main>
                 <Hero />
