@@ -34,7 +34,7 @@ const portfolioItems = [
     {
         id: 5,
         title: "Portfólio para Fotógrafo",
-        description: "Site minimalista e visual para exibir o trabalho de um fotógrafo.",
+        description: "Site minimalista mas complexo, com música, para exibir o trabalho de um fotógrafo. As imagens mudam a cada refresh",
         imageUrl: "images/Captura2.png",
         link: "https://josephfotografis.netlify.app/",
     },

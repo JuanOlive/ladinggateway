@@ -54,10 +54,10 @@ export const Header: React.FC<HeaderProps> = ({ whatsAppNumber, whatsAppMessage 
             </div>
             {/* Mobile Menu */}
             {isMenuOpen && (
-                 <div className="md:hidden bg-white shadow-lg">
+                 <div className="md:hidden bg-gray-800/50 shadow-lg">
                     <nav className="flex flex-col items-center space-y-4 py-4">
                          {navLinks.map((link) => (
-                            <a key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)} className="text-gray-600 hover:text-indigo-600 font-medium transition-colors text-lg">
+                            <a key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)} className="text-gray-200 hover:text-indigo-600 font-medium transition-colors text-lg">
                                 {link.label}
                             </a>
                         ))}
